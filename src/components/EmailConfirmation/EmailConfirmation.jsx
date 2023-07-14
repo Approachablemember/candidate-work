@@ -24,8 +24,8 @@ const EmailConfirmation = () => {
 
     const emailConfirmed = <div className={v.sendAgainLinks}>
         <h3 className={v.sendAgainTitle}>Keine E-Mail erhalten?</h3>
-        <a href={"https//:example.com"}>Erneut senden</a>
-        <a href={"https//:example.com"}>E-Mailadresse ändern</a>
+        <a className={v.sendAgainLink} href={"https//:example.com"}>Erneut senden</a>
+        <a className={v.sendAgainLink} href={"https//:example.com"}>E-Mailadresse ändern</a>
     </div>
 
     return (
