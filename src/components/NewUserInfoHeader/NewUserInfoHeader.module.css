@@ -1,0 +1,23 @@
+.header {
+    height: 84px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-image: url("../../.././public/header_background.svg");
+    padding: 10% 6%;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 1px;
+}
+
+.title {
+    font-size: 19px;
+    font-weight: 700;
+    color: #2B4B51;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+}

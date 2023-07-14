@@ -1,0 +1,70 @@
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 10% 6%;
+    gap: 20px;
+    animation: bodySlide 2s ease alternate;
+
+}
+
+.textWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #2B4B51;
+}
+
+li::marker {
+    font-size: 10px;
+}
+
+.btnWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.btn {
+    width: 100%;
+    border-radius: 5px;
+    padding: 14px 0;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #FEDA50;
+    color: #2B4B51;
+    border: none;
+    box-shadow: 0 1px;
+
+}
+
+.btn:active {
+    opacity: 50%;
+    transform: translateY(2px);
+    box-shadow: 0 1px #594c1a;
+}
+
+.btnLink {
+    text-decoration: none;
+    color: #2B4B51;
+}
+
+.headerAnimation {
+    width: 100%;
+    animation: headerSlide 2s ease alternate;
+}
+
+@keyframes headerSlide {
+    0% { transform: translateY(-90px)}
+    100% { transform: translateY(0) }
+}
+
+@keyframes bodySlide {
+    0% { transform: translateY(400px)}
+    100% { transform: translateY(0px) }
+}
