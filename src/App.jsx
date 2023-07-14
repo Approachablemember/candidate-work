@@ -1,5 +1,5 @@
 import React from "react";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {HashRouter, Route, Routes} from "react-router-dom";
 import Login from "./components/Login/Login";
 import Registration from "./components/Registration/Registration";
 import WelcomePage from "./components/WelcomePage/WelcomePage";
@@ -10,7 +10,7 @@ import EmailConfirmation from "./components/EmailConfirmation/EmailConfirmation"
 function App() {
 
     return (
-        <BrowserRouter>
+        <HashRouter>
         <div className={v.App}>
             <Routes>
                 <Route path={"/"} element={<WelcomePage/>}/>
@@ -20,7 +20,7 @@ function App() {
                 <Route path={"/email-confirmation"} element={<EmailConfirmation/>}/>
             </Routes>
         </div>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 
